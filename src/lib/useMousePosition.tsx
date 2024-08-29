@@ -4,7 +4,7 @@ const useMousePosition = () => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
-        const updateMousePosition = e => {
+        const updateMousePosition = (e: any) => {
             setMousePosition({ x: e.clientX, y: e.clientY });
         };
 

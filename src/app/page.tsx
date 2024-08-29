@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="bg-sunflower" >
       <div style={{ background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 228, 153, 1), transparent 80%)` }}>
-        <main className=" mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0" >
-          <div className="font-mono lg:flex lg:justify-between lg:gap-4 ">
-            <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+        <main className=" mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-20 lg:py-0" >
+          <div className="font-mono lg:flex lg:justify-between lg:gap-6 ">
+            <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24">
               <div>
                 <h1 className="text-5xl font-bold tracking-wide sm:text-6xl ">Evan Speciale</h1>
                 <h2 className="mt-3 text-lg tracking-wide sm:text-xl">Web Developer</h2>
@@ -40,15 +40,15 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="pt-24 lg:w-1/2 lg:py-24">
+            <div className="pt-24 lg:w-3/5 lg:py-24">
               <ul className="flex flex-col">
                 <li className="pb-8 border-b-4 border-soil">
                   <a href="https://deadwest-v4.vercel.app/">
                     <div >
                       <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">Dead West Store</h2>
                       <div className="flex gap-4">
-                        <Image src='/deadwest.png' height={801} width={1279} alt='screenshot of Dead West Store site' className="w-1/2" />
-                        <div className="w-1/2 text-lg">Ecommerce site made with Next.js, React, Hygraph, and Snipcart</div>
+                        <Image src='/deadwest-2.png' width={1275} height={809} alt='screenshot of Dead West Store site' className="w-1/2" />
+                        <div className="w-1/2 text-lg">Ecommerce site built with Next.js, React, Hygraph, and Snipcart</div>
                       </div>
                     </div>
                   </a>
@@ -56,49 +56,15 @@ export default function Home() {
                 <li className="pb-8 border-b-4 border-soil">
                   <a href="https://deadwest-v4.vercel.app/">
                     <div >
-                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">Dead West Store</h2>
+                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">jsNotebook</h2>
                       <div className="flex gap-4">
-                        <Image src='/deadwest.png' height={801} width={1279} alt='screenshot of Dead West Store site' className="w-1/2" />
-                        <div className="w-1/2 text-lg">Ecommerce site made with Next.js, React, Hygraph, and Snipcart</div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="pb-8 border-b-4 border-soil">
-                  <a href="https://deadwest-v4.vercel.app/">
-                    <div >
-                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">Dead West Store</h2>
-                      <div className="flex gap-4">
-                        <Image src='/deadwest.png' height={801} width={1279} alt='screenshot of Dead West Store site' className="w-1/2" />
-                        <div className="w-1/2 text-lg">Ecommerce site made with Next.js, React, Hygraph, and Snipcart</div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="pb-8 border-b-4 border-soil">
-                  <a href="https://deadwest-v4.vercel.app/">
-                    <div >
-                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">Dead West Store</h2>
-                      <div className="flex gap-4">
-                        <Image src='/deadwest.png' height={801} width={1279} alt='screenshot of Dead West Store site' className="w-1/2" />
-                        <div className="w-1/2 text-lg">Ecommerce site made with Next.js, React, Hygraph, and Snipcart</div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li className="pb-8 border-b-4 border-soil">
-                  <a href="https://deadwest-v4.vercel.app/">
-                    <div >
-                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">Dead West Store</h2>
-                      <div className="flex gap-4">
-                        <Image src='/deadwest.png' height={801} width={1279} alt='screenshot of Dead West Store site' className="w-1/2" />
-                        <div className="w-1/2 text-lg">Ecommerce site made with Next.js, React, Hygraph, and Snipcart</div>
+                        <Image src='/jsnotebook-es.png' width={1255} height={870} alt='screenshot of Dead West Store site' className="w-1/2" />
+                        <div className="w-1/2 text-lg">Browser-based interactive code and markup notebook with in-browser code bundling and execution. Built with React, TypeScript, and esbuild</div>
                       </div>
                     </div>
                   </a>
                 </li>
               </ul>
-
             </div>
           </div>
         </main >
