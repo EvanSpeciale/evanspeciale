@@ -15,7 +15,7 @@ export default function Home() {
                 <h1 className="text-5xl font-bold tracking-wide sm:text-6xl ">Evan Speciale</h1>
                 <h2 className="mt-3 text-lg tracking-wide sm:text-xl">Web Developer</h2>
                 <div className="mt-4 mr-4">
-                  <Image src='/pet-raccoon.jpg' height={667} width={1000} alt='picture of me, a raccoon' style={{ width: 'full', aspectRatio: '4/3', objectFit: 'cover' }} />
+                  I am a software developer with a passion for finding creative solutions to complex problems. I have five years’ experience as a full stack web developer including modern front end development libraries (incl. React, Next.js, Tailwind), back-end services (incl. Express, MySQL, MongoDB), and CMS (Drupal, Hygraph, WordPress). I am seeking a front end development position where I can apply my skills and creativity to a growing, modern application.
                 </div>
                 <nav className="nav hidden lg:block" aria-label='jump to section links'></nav>
               </div>
@@ -43,7 +43,7 @@ export default function Home() {
             <div className="pt-24 lg:w-3/5 lg:py-24">
               <ul className="flex flex-col">
                 <li className="pb-8 border-b-4 border-soil">
-                  <a href="https://deadwest-v4.vercel.app/">
+                  <a href="https://deadwest.art/">
                     <div >
                       <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">Dead West Store</h2>
                       <div className="flex gap-4">
@@ -54,7 +54,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="pb-8 border-b-4 border-soil">
-                  <a href="https://deadwest-v4.vercel.app/">
+                  <a href="https://github.com/EvanSpeciale/jsnotebook-es">
                     <div >
                       <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">jsNotebook</h2>
                       <div className="flex gap-4">
@@ -63,6 +63,38 @@ export default function Home() {
                       </div>
                     </div>
                   </a>
+                </li>
+                <li className="pb-8">
+                  <div>
+                    <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">Experience</h2>
+                    <div className="flex gap-4 pb-4 mb-4 border-b-2 border-soil">
+                      <div className="w-1/2">
+                        <div className="text-xl font-bold">Web Developer</div>
+                        <div className="text-md">The College at Arizona State University</div>
+                        <div className="text-sm">July 2023 - Present</div>
+                      </div>
+                      <div className="w-1/2 text-sm">
+                        <ul>
+                          <li>Developed and maintained the Drupal distribution for the largest college at ASU over 50+ sites</li>
+                          <li>Developed a platform for smaller faculty sites with a React front end and a headless Drupal back end</li>
+                          <li>Worked to align The College sites with WCAG 2.2 Accessibility Guidelines</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="flex gap-4 pb-4 mb-4 border-b-2 border-soil">
+                      <div className="w-1/2">
+                        <div>Web Developer</div>
+                        <div>BIO5 at The University of Arizona</div>
+                        <div>August 2021 - July 2023</div>
+                      </div>
+                      <div className="w-1/2 text-sm">
+                        <ul>
+                          <li>Developed and maintained the institution’s primary Drupal site (BIO5.org)</li>
+                          <li>Oversaw the migration of the extended network of BIO5 sites to a cloud platform.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
