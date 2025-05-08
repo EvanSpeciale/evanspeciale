@@ -44,6 +44,8 @@
   --font-sans: var(--font-dosis), Inter, system-ui, Arial, sans-serif;
   --font-mono: var(--dank-mono);
 
+  --list-marker: '- ';
+
   @keyframes accordion-down {
     from {
       height: 0;

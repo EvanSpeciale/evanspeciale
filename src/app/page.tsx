@@ -12,8 +12,8 @@ export default function Home() {
           <div className="lg:flex lg:justify-between lg:gap-6 ">
             <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24">
               <div>
-                <h1 className="text-5xl font-bold tracking-wide sm:text-6xl ">Evan Speciale</h1>
-                <h2 className="mt-3 text-lg tracking-wide sm:text-xl">Web Developer</h2>
+                <h1 className="text-5xl font-bold tracking-wide sm:text-6xl font-bold">Evan Speciale</h1>
+                <h2 className="mt-3 text-lg tracking-wide sm:text-xl font-bold">Web Developer</h2>
                 <div className="mt-4 mr-4">
                   I am a software developer with a passion for finding creative solutions to complex problems. I have five years’ experience as a full stack web developer including modern front end development libraries (incl. React, Next.js, Tailwind), back-end services (incl. Express, MySQL, MongoDB), and CMS (Drupal, Hygraph, WordPress). I am seeking a front end development position where I can apply my skills and creativity to a growing, modern application.
                 </div>
@@ -45,7 +45,7 @@ export default function Home() {
                 <li className="pb-8 border-b-4 border-soil">
                   <a href="https://deadwest.art/">
                     <div >
-                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">Dead West Store</h2>
+                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">Dead West Store</h2>
                       <div className="flex gap-4">
                         <Image src='/deadwest-2.png' width={1275} height={809} alt='screenshot of Dead West Store site' className="w-1/2" />
                         <div className="w-1/2 text-lg">Ecommerce site built with Next.js, React, Hygraph, and Snipcart</div>
@@ -56,7 +56,7 @@ export default function Home() {
                 <li className="pb-8 border-b-4 border-soil">
                   <a href="https://github.com/EvanSpeciale/jsnotebook-es">
                     <div >
-                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">jsNotebook</h2>
+                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">jsNotebook</h2>
                       <div className="flex gap-4">
                         <Image src='/jsnotebook-es.png' width={1255} height={870} alt='screenshot of Dead West Store site' className="w-1/2" />
                         <div className="w-1/2 text-lg">Browser-based interactive code and markup notebook with in-browser code bundling and execution. Built with React, TypeScript, and esbuild</div>
@@ -66,7 +66,7 @@ export default function Home() {
                 </li>
                 <li className="pb-8 my-4">
                   <div>
-                    <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">Experience</h2>
+                    <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">Experience</h2>
                     <div className="flex gap-4 pb-4 mb-4">
                       <div className="w-3/8">
                         <div className="text-xl font-bold mb-2">Web Developer</div>
@@ -74,7 +74,7 @@ export default function Home() {
                         <div className="text-xs italic">July 2023 - Present</div>
                       </div>
                       <div className="w-5/8 text-sm">
-                        <ul className="flex flex-col gap-4">
+                        <ul className="flex flex-col gap-4 list-(--list-marker)">
                           <li>Developed and maintained the Drupal distribution for the largest college at ASU over 50+ sites</li>
                           <li>Developed a platform for smaller faculty sites with a React front end and a headless Drupal back end</li>
                           <li>Worked to align The College sites with WCAG 2.2 Accessibility Guidelines</li>
@@ -88,7 +88,7 @@ export default function Home() {
                         <div className="text-xs italic">August 2021 - July 2023</div>
                       </div>
                       <div className="w-5/8 text-sm">
-                        <ul className="flex flex-col gap-4">
+                        <ul className="flex flex-col gap-4 list-(--list-marker)">
                           <li>Developed and maintained the institution’s primary Drupal site (BIO5.org)</li>
                           <li>Oversaw the migration of the extended network of BIO5 sites to a cloud platform.</li>
                         </ul>
