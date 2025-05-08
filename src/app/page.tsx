@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className="bg-sunflower" >
       <div style={{ background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 228, 153, 1), transparent 80%)` }}>
-        <main className=" mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-20 lg:py-0" >
-          <div className="font-mono lg:flex lg:justify-between lg:gap-6 ">
+        <main className=" mx-auto min-h-screen max-w-(--breakpoint-xl) px-6 py-12 font-sans md:px-12 md:py-20 lg:px-20 lg:py-0" >
+          <div className="lg:flex lg:justify-between lg:gap-6 ">
             <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24">
               <div>
                 <h1 className="text-5xl font-bold tracking-wide sm:text-6xl ">Evan Speciale</h1>
@@ -64,31 +64,31 @@ export default function Home() {
                     </div>
                   </a>
                 </li>
-                <li className="pb-8">
+                <li className="pb-8 my-4">
                   <div>
                     <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4">Experience</h2>
-                    <div className="flex gap-4 pb-4 mb-4 border-b-2 border-soil">
-                      <div className="w-1/2">
-                        <div className="text-xl font-bold">Web Developer</div>
-                        <div className="text-md">The College at Arizona State University</div>
-                        <div className="text-sm">July 2023 - Present</div>
+                    <div className="flex gap-4 pb-4 mb-4">
+                      <div className="w-3/8">
+                        <div className="text-xl font-bold mb-2">Web Developer</div>
+                        <div className="text-md mb-2">The College at Arizona State University</div>
+                        <div className="text-xs italic">July 2023 - Present</div>
                       </div>
-                      <div className="w-1/2 text-sm">
-                        <ul>
+                      <div className="w-5/8 text-sm">
+                        <ul className="flex flex-col gap-4">
                           <li>Developed and maintained the Drupal distribution for the largest college at ASU over 50+ sites</li>
                           <li>Developed a platform for smaller faculty sites with a React front end and a headless Drupal back end</li>
                           <li>Worked to align The College sites with WCAG 2.2 Accessibility Guidelines</li>
                         </ul>
                       </div>
                     </div>
-                    <div className="flex gap-4 pb-4 mb-4 border-b-2 border-soil">
-                      <div className="w-1/2">
-                        <div>Web Developer</div>
-                        <div>BIO5 at The University of Arizona</div>
-                        <div>August 2021 - July 2023</div>
+                    <div className="flex gap-4 pb-4 mb-4">
+                      <div className="w-3/8">
+                        <div className="text-xl font-bold mb-2">Web Developer</div>
+                        <div className="text-md mb-2">BIO5 at The University of Arizona</div>
+                        <div className="text-xs italic">August 2021 - July 2023</div>
                       </div>
-                      <div className="w-1/2 text-sm">
-                        <ul>
+                      <div className="w-5/8 text-sm">
+                        <ul className="flex flex-col gap-4">
                           <li>Developed and maintained the institution’s primary Drupal site (BIO5.org)</li>
                           <li>Oversaw the migration of the extended network of BIO5 sites to a cloud platform.</li>
                         </ul>

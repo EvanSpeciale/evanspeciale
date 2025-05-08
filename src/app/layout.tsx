@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import localFont from 'next/font/local';
 import "./globals.css";
 
-// const dankMono = localFont({ src: "../fonts/DankMono-Regular.ttf", variable: '--dank-mono' });
-
+// const dankMono = localFont({ src: "../fonts/DankMono-Regular.ttf", variable: '--font-dank-mono' });
 const dankMono = localFont({
   src: [
     {
@@ -12,18 +11,37 @@ const dankMono = localFont({
       style: 'normal',
     },
     {
-      path: '../fonts/DankMono-Italic.ttf',
-      weight: '400',
-      style: 'italic',
-    },
-    {
       path: '../fonts/DankMono-Bold.ttf',
       weight: '700',
       style: 'normal',
     },
+    {
+      path: '../fonts/DankMono-Italic.ttf',
+      weight: '400',
+      style: 'italic',
+    },
   ],
-  variable: '--dank-mono'
 })
+// const dankMono = localFont({
+//   src: [
+//     {
+//       path: '../fonts/DankMono-Regular.ttf',
+//       weight: '400',
+//       style: 'normal',
+//     },
+//     {
+//       path: '../fonts/DankMono-Italic.ttf',
+//       weight: '400',
+//       style: 'italic',
+//     },
+//     {
+//       path: '../fonts/DankMono-Bold.ttf',
+//       weight: '700',
+//       style: 'normal',
+//     },
+//   ],
+//   variable: '--dank-mono'
+// })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -37,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dankMono.variable}>{children}</body>
+      <body className={dankMono.className}>{children}</body>
     </html>
   );
 }
