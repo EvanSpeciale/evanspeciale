@@ -43,6 +43,17 @@ export default function Home() {
             <div className="pt-24 lg:w-3/5 lg:py-24">
               <ul className="flex flex-col">
                 <li className="pb-8 border-b-4 border-soil">
+                  <a href="https://raindelay.vercel.app/">
+                    <div >
+                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">raindelay [WIP]</h2>
+                      <div className="flex gap-4">
+                        <Image src='/raindelay.png' width={1799} height={1239} alt='screenshot of raindelay app' className="w-1/2" />
+                        <div className="w-1/2 text-lg">For when you&apos;re watching the game and you&apos;re like &quot;hey what&apos;s the weather like there?&quot;</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li className="pb-8 border-b-4 border-soil">
                   <a href="https://deadwest.art/">
                     <div >
                       <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">Dead West Store</h2>
