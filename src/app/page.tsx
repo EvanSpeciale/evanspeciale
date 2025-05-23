@@ -1,7 +1,7 @@
 "use client"
 import useMousePosition from "@/lib/useMousePosition";
 import Image from "next/image";
-import { FaLinkedin, FaSquareLetterboxd, FaSquareGithub } from "react-icons/fa6";
+import { FaLinkedin, FaSquareLetterboxd, FaSquareGithub, FaFileLines } from "react-icons/fa6";
 
 export default function Home() {
   const mousePosition = useMousePosition();
@@ -36,6 +36,12 @@ export default function Home() {
                   <a className="block hover:text-soil" href="https://www.letterboxd.com/cool_normal" target="_blank" rel="noreferrer noopener" aria-label="Letterboxd (opens in a new tab)" title="Letterboxd">
                     <span className="sr-only">Letterboxd</span>
                     <FaSquareLetterboxd size={24} />
+                  </a>
+                </li>
+                <li className="mr-5 text-xs shrink-0">
+                  <a className="block hover:text-soil" href="/es_resume_2025.pdf" target="_blank" rel="noreferrer noopener" aria-label="Resume PDF (opens in a new tab)" title="Resume">
+                    <span className="sr-only">Resume PDF</span>
+                    <FaFileLines size={22} />
                   </a>
                 </li>
               </ul>
