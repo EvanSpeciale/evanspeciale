@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from 'next/font/local';
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const dankMono = localFont({
   src: [
@@ -34,7 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dankMono.className}>{children}</body>
+      <body className={dankMono.className}>{children}
+        <Analytics />
+      </body>
     </html>
   );
 }
