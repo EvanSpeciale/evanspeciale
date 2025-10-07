@@ -49,6 +49,28 @@ export default function Home() {
             <div className="pt-24 lg:w-3/5 lg:py-24">
               <ul className="flex flex-col">
                 <li className="pb-8 border-b-4 border-soil">
+                  <a href="https://thecollege.asu.edu/">
+                    <div >
+                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">The College at ASU</h2>
+                      <div className="flex gap-4">
+                        <Image src='/the-college.png' width={1275} height={809} alt='screenshot of The College at ASU Homepage' className="w-1/2" />
+                        <div className="w-1/2 text-lg">Custom Drupal as a Service distribution for site building at The College at ASU. Drupal 10 platform with React/JS component integrations</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li className="pb-8 border-b-4 border-soil">
+                  <a href="https://bio5.org/">
+                    <div >
+                      <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">BIO5 Institute</h2>
+                      <div className="flex gap-4">
+                        <Image src='/bio5.png' width={1275} height={809} alt='screenshot of BIO5 Institute Homepage' className="w-1/2" />
+                        <div className="w-1/2 text-lg">Drupal 10 site with custom Institute API integrations</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li className="pb-8 border-b-4 border-soil">
                   <a href="https://deadwest.art/">
                     <div >
                       <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">Dead West Store</h2>
