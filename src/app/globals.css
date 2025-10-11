@@ -2,6 +2,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
+}
+
 @theme {
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));

@@ -1,15 +1,15 @@
 "use client"
 import useMousePosition from "@/lib/useMousePosition";
 import Image from "next/image";
-import { FaLinkedin, FaSquareLetterboxd, FaSquareGithub, FaFileLines } from "react-icons/fa6";
+import { FaLinkedin, FaSquareLetterboxd, FaSquareGithub, FaFileLines, FaCopyright, FaRegCopyright } from "react-icons/fa6";
 
 export default function Home() {
   const mousePosition = useMousePosition();
   return (
-    <div className="bg-sunflower" >
+    <div className="bg-sunflower bg-fixed pb-2" >
       <div style={{ background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 228, 153, 1), transparent 80%)` }}>
         <main className=" mx-auto min-h-screen max-w-(--breakpoint-xl) px-6 py-12 font-sans md:px-12 md:py-20 lg:px-20 lg:py-0" >
-          <div className="lg:flex lg:justify-between lg:gap-6 ">
+          <div className="lg:flex lg:justify-between lg:gap-6">
             <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24">
               <div>
                 <h1 className="text-5xl font-bold tracking-wide sm:text-6xl font-bold">Evan Speciale</h1>
@@ -46,15 +46,15 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="pt-24 lg:w-3/5 lg:py-24">
+            <div className="pt-8 lg:w-3/5 lg:py-24">
               <ul className="flex flex-col">
                 <li className="pb-8 border-b-4 border-soil">
                   <a href="https://thecollege.asu.edu/">
                     <div >
                       <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">The College at ASU</h2>
-                      <div className="flex gap-4">
-                        <Image src='/the-college.png' width={1275} height={809} alt='screenshot of The College at ASU Homepage' className="w-1/2" />
-                        <div className="w-1/2 text-lg">Custom Drupal as a Service distribution for site building at The College at ASU. Drupal 10 platform with React/JS component integrations</div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <Image src='/the-college.png' width={1275} height={809} alt='screenshot of The College at ASU Homepage' className="object-contain" />
+                        <div className="flex-1/2 text-lg">Custom Drupal as a Service distribution for site building at The College at ASU. Drupal 10 platform with React/JS component integrations</div>
                       </div>
                     </div>
                   </a>
@@ -63,9 +63,9 @@ export default function Home() {
                   <a href="https://bio5.org/">
                     <div >
                       <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">BIO5 Institute</h2>
-                      <div className="flex gap-4">
-                        <Image src='/bio5.png' width={1275} height={809} alt='screenshot of BIO5 Institute Homepage' className="w-1/2" />
-                        <div className="w-1/2 text-lg">Drupal 10 site with custom Institute API integrations</div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <Image src='/bio5.png' width={1275} height={809} alt='screenshot of BIO5 Institute Homepage' className="object-contain" />
+                        <div className="text-lg">Drupal 10 site with custom Institute API integrations</div>
                       </div>
                     </div>
                   </a>
@@ -74,9 +74,9 @@ export default function Home() {
                   <a href="https://deadwest.art/">
                     <div >
                       <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">Dead West Store</h2>
-                      <div className="flex gap-4">
-                        <Image src='/deadwest-2.png' width={1275} height={809} alt='screenshot of Dead West Store site' className="w-1/2" />
-                        <div className="w-1/2 text-lg">Ecommerce site built with Next.js, React, GraphQL, and Tailwind</div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <Image src='/deadwest-2.png' width={1275} height={809} alt='screenshot of Dead West Store site' className="object-contain" />
+                        <div className="text-lg">Ecommerce site built with Next.js, React, GraphQL, and Tailwind</div>
                       </div>
                     </div>
                   </a>
@@ -85,9 +85,9 @@ export default function Home() {
                   <a href="https://github.com/EvanSpeciale/jsnotebook-es">
                     <div >
                       <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">jsNotebook</h2>
-                      <div className="flex gap-4">
-                        <Image src='/jsnotebook-es.png' width={1255} height={870} alt='screenshot of Dead West Store site' className="w-1/2" />
-                        <div className="w-1/2 text-lg">Browser-based interactive code and markup notebook with in-browser code bundling and execution. Built with React, TypeScript, and esbuild</div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <Image src='/jsnotebook-es.png' width={1255} height={870} alt='screenshot of Dead West Store site' className="object-contain" />
+                        <div className="text-lg">Browser-based interactive code and markup notebook with in-browser code bundling and execution. Built with React, TypeScript, and esbuild</div>
                       </div>
                     </div>
                   </a>
@@ -96,9 +96,9 @@ export default function Home() {
                   <a href="https://raindelay.vercel.app/">
                     <div >
                       <h2 className="mt-3 text-3xl tracking-wide sm:text-4xl mb-4 font-bold">raindelay [WIP]</h2>
-                      <div className="flex gap-4">
-                        <Image src='/raindelay.png' width={1799} height={1239} alt='screenshot of raindelay app' className="w-1/2" />
-                        <div className="w-1/2 text-lg">For when you&apos;re watching the game and you&apos;re like &quot;hey what&apos;s the weather like there?&quot; Just messing around with Next.js, Tailwind, and Tanstack libraries</div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <Image src='/raindelay.png' width={1799} height={1239} alt='screenshot of raindelay app' className="object-contain" />
+                        <div className="text-lg">For when you&apos;re watching the game and you&apos;re like &quot;hey what&apos;s the weather like there?&quot; Just messing around with Next.js, Tailwind, and Tanstack libraries</div>
                       </div>
                     </div>
                   </a>
@@ -139,6 +139,12 @@ export default function Home() {
             </div>
           </div>
         </main >
+        <footer>
+          <div className="justify-self-center">
+            <FaRegCopyright size={12} className="inline align-baseline" />
+            {new Date().getFullYear()} Evan Speciale
+          </div>
+        </footer>
       </div>
     </div>
   );
